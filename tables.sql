@@ -1,3 +1,4 @@
+/*table for user information*/
 CREATE TABLE USERS
 (
   accessKey varchar(50) PRIMARY KEY,
@@ -9,12 +10,12 @@ CREATE TABLE USERS
   Phone# bigint
 );
 
-
+/*table for image information*/
 CREATE TABLE IMAGES
 (
-	accessKey varchar(50) FOREIGN KEY REFERENCES USERS(accessKey),
+	accessKey varchar(50) FOREIGN KEY REFERENCES USERS(accessKey), /*referemces accessKey in USERS table*/
 	Username varchar(50),
-	ImagePath varchar(1024),
-	time_received TIME,
-	date_received DATE
+	ImagePath varchar(1024), /*location of image*/
+	time_received TIME, /*time image is received*/
+	date_received DATE /*date image is received*/
 );
