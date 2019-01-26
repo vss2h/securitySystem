@@ -1,3 +1,5 @@
+/*Programmer: Rushdi Al-Hasan*/
+
 /*table for user information*/
 CREATE TABLE USERS
 (
